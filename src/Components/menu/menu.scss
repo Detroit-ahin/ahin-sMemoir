@@ -1,0 +1,42 @@
+@import "../../global.scss";
+
+.menu{
+    width: 300px;
+    height: 100vh;
+    background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.active{
+        right: 0;
+    }
+
+    ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-weight: 300;
+        color: whitesmoke;
+        width:60%;
+    }
+    li{
+        margin-bottom: 25px;
+        a{
+            font-size: inherit;
+            color:inherit;
+            text-decoration: none;
+        }
+        &:hover{
+            font-weight: 500;
+        }
+    }
+}
